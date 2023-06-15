@@ -1,2 +1,2 @@
-# Desafios-JavaScript-Mentor
- Desafios propostos pelo JavaScript Mentor
+# Desafios
+ Desafios do Frontend Mentor
