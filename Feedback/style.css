@@ -62,6 +62,12 @@ body{
 
 
 
+
+.ativoLaranja{
+    background-color: hsl(25, 97%, 53%) !important;
+}
+
+
 button{
     color: hsl(0, 0%, 100%);
     border: none;
@@ -77,6 +83,17 @@ button{
     font-weight: 700;
     letter-spacing: 2.5px;
     text-transform: uppercase;
+    transition: background-color .1s ease;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    background-color: hsl(0, 0%, 100%);
+    /* transition: 2s ease; */
+    color: hsl(25, 97%, 53%);
 }
 
 img{
