@@ -25,8 +25,9 @@ window.addEventListener("load", () => {
   const back = document.querySelector(".back");
 
   function openTy() {
-    const array = Object.values(numeros);
+    containerBox.classList.remove('active')
 
+    const array = Object.values(numeros);
     const todosComAtivo = array.every((n) => {
       return !n.classList.contains("ativoLaranja");
     });
@@ -51,7 +52,6 @@ window.addEventListener("load", () => {
     });
   }
 
-  button.addEventListener("click", openTy);
 
   function backPage() {
     containerTy.style.opacity = "0";
@@ -69,6 +69,6 @@ window.addEventListener("load", () => {
 
 
   }
-
+  button.addEventListener("click", openTy);
   back.addEventListener("click", backPage);
 });
