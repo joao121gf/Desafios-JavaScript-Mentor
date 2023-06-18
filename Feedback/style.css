@@ -130,6 +130,17 @@ button:active{
     transition: .5s ease;
 }
 
+
+
+.correct {
+    bottom: 11%;
+    left: 18%;
+    position: relative;
+    z-index: 3;
+    opacity: 0;
+    color: hsl(0deg 74.97% 45.54%) !important;
+}
+
 @keyframes spin {
     to{
         transform: rotate(360deg);
@@ -190,6 +201,10 @@ button:active{
     .container-box{
         width: 70%;
         padding: 40px 30px;
+    }
+    .correct{
+        left: 0%;
+        text-align: center;
     }
 }
 
