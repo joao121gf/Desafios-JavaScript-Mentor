@@ -21,24 +21,22 @@ window.addEventListener("load", () => {
   const containerBox = document.querySelector(".container-box");
   const load = document.querySelector(".load");
   const number = document.querySelector("[data-number]");
-  const select = document.querySelector('.correct')
-
-
+  const select = document.querySelector(".correct");
+  const back = document.querySelector(".back");
 
   function openTy() {
-    const array = Object.values(numeros)
+    const array = Object.values(numeros);
 
-     const todosComAtivo = array.every((n) =>{
-       return !n.classList.contains('ativoLaranja')
-     }) 
-     if (todosComAtivo){
-       select.style.opacity = '1'
-     }
-
+    const todosComAtivo = array.every((n) => {
+      return !n.classList.contains("ativoLaranja");
+    });
+    if (todosComAtivo) {
+      select.style.opacity = "1";
+    }
 
     numeros.forEach((n, index) => {
       if (n.classList.contains("ativoLaranja")) {
-        select.style.opacity = '0'
+        select.style.opacity = "0";
 
         number.innerText = n.innerText;
 
@@ -54,4 +52,22 @@ window.addEventListener("load", () => {
   }
 
   button.addEventListener("click", openTy);
+
+  function backPage() {
+    containerTy.style.opacity = "0";
+    containerTy.style.zIndex = "0";
+    containerTy.classList.remove("active");
+    containerBox.style.opacity = "1";
+    containerBox.style.zIndex = "1";
+    select.style.opacity = "0";
+    load.style.opacity = "0";
+    load.style.transition = 'none'
+    numeros.forEach((n) => {
+      n.classList.remove('ativoLaranja')
+    })
+
+
+  }
+
+  back.addEventListener("click", backPage);
 });
