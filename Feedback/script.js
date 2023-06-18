@@ -59,6 +59,7 @@ window.addEventListener("load", () => {
     containerTy.classList.remove("active");
     containerBox.style.opacity = "1";
     containerBox.style.zIndex = "1";
+    containerBox.classList.add('active')
     select.style.opacity = "0";
     load.style.opacity = "0";
     load.style.transition = 'none'
