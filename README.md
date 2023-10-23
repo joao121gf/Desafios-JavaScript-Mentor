@@ -4,7 +4,7 @@ Uma tela de animação simples, porém responsiva e com varias animações e fun
 ![Imagem do projeto](Feedback/imagens/feedback.png)
 
 
-[Você pode conferir como ficou o projeto aqui](https://joao121gf.github.io/Desafios-JavaScript-Mentor/)
+[Você pode conferir como ficou o projeto aqui](https://joao121gf.github.io/Feedback-page/)
 
 
 ## 🛠 Tecnologias
